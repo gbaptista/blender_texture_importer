@@ -8,7 +8,7 @@ A [Blender](https://www.blender.org) Add-on that automatically imports texture f
 
 ## Setup
 
-Download the "Source code (zip)" from the [latest release](https://github.com/gbaptista/blender_texture_importer/releases) and follow the [Installing Add-ons](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html#installing-add-ons) sections from the Blender documentation.
+Download the `blender_texture_importer.zip` file from the [latest release](https://github.com/gbaptista/blender_texture_importer/releases) and follow the [Installing Add-ons](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html#installing-add-ons) section from the Blender documentation.
 
 ## Usage
 
