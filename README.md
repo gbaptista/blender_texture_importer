@@ -2,6 +2,8 @@
 
 A [Blender](https://www.blender.org) Add-on that automatically imports texture files and creates appropriate shader nodes from a given directory.
 
+https://gist.github.com/assets/29520/708d8876-4e0b-467c-b188-fb2cb7668ddb
+
 - [Setup](#setup)
 - [Usage](#usage)
 - [Development](#development)
