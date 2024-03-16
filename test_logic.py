@@ -3,6 +3,44 @@ from .logic import map_candidates
 
 def test_map_candidates():
     assert map_candidates(
+        ['Dry_Sand/8K_AO.jpg',
+         'Dry_Sand/8K_Albedo.jpg',
+         'Dry_Sand/8K_Displacement.exr',
+         'Dry_Sand/8K_Displacement.jpg',
+         'Dry_Sand/8K_Normal.jpg',
+         'Dry_Sand/8K_Roughness.jpg',
+         'Dry_Sand/Sand_Desert_surface_Preview.png']
+    ) == {
+        'ambient_occlusion': 'Dry_Sand/8K_AO.jpg',
+        'displacement': 'Dry_Sand/8K_Displacement.exr',
+        'color': 'Dry_Sand/8K_Albedo.jpg',
+        'normal': 'Dry_Sand/8K_Normal.jpg',
+        'roughness': 'Dry_Sand/8K_Roughness.jpg'}
+
+    assert map_candidates(
+        ['Metal_Treated/Metal_Treated_sglfedgc_surface_Preview.png',
+         'Metal_Treated/4K_Roughness.jpg',
+         'Metal_Treated/4K_Normal.jpg',
+         'Metal_Treated/4K_Metalness.jpg',
+         'Metal_Treated/4K_Albedo.jpg']
+    ) == {
+        'color': 'Metal_Treated/4K_Albedo.jpg',
+        'metalness': 'Metal_Treated/4K_Metalness.jpg',
+        'normal': 'Metal_Treated/4K_Normal.jpg',
+        'roughness': 'Metal_Treated/4K_Roughness.jpg'}
+
+    assert map_candidates(
+        ['Wood/wood_table_001_diff_4k.jpg',
+         'Wood/wood_table_001_disp_4k.png',
+         'Wood/wood_table_001_nor_gl_4k.exr',
+         'Wood/wood_table_001_rough_4k.jpg']
+    ) == {
+        'color': 'Wood/wood_table_001_diff_4k.jpg',
+        'displacement': 'Wood/wood_table_001_disp_4k.png',
+        'normal': 'Wood/wood_table_001_nor_gl_4k.exr',
+        'roughness': 'Wood/wood_table_001_rough_4k.jpg'}
+
+    assert map_candidates(
         ['Wood/Wood_NRM16_8K.tif',
          'Wood/Wood_Sphere.png',
          'Wood/Wood_REFL_8K.jpg',
