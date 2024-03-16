@@ -264,7 +264,7 @@ class ImportTextureOperator(bpy.types.Operator, ImportHelper):
 
         controllers.NodesController.connect(
             node_tree,
-            nodes['tex_coord'], 'Generated',
+            nodes['tex_coord'], 'UV',
             nodes['mapping'], 'Vector')
 
         controllers.NodesController.connect(
